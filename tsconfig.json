@@ -1,0 +1,37 @@
+{
+  "include": [
+    "src/**/*"
+  ],
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    "incremental": true,
+
+    // File Layout
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    "module": "nodenext", // build (imports and exports)
+    "target": "esnext",  // build (what js syntax ts outputs)
+    "lib": ["esnext"], // typing (Provides type declarations for latest JS built-ins)
+    "types": ["node"], // typing (Provides type declarations for latest JS built-ins)    
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true,    
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+  }
+}

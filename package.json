@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "dev": "concurrently \"tsc --watch\" \"nodemon dist/main.js\""
+  },  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dxrzc/test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dxrzc/test/issues"
+  },
+  "homepage": "https://github.com/dxrzc/test#readme",
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.9.2"
+  }
+}
