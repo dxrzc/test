@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf dist && tsc",
-    "dev": "concurrently \"tsc --watch\" \"nodemon dist/main.js\""
+    "dev": "concurrently \"tsc --watch >/dev/null\" \"nodemon dist/main.js\""
   },
   "repository": {
     "type": "git",

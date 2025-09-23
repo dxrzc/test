@@ -1,9 +1,8 @@
-import { DatabaseService } from "./services/database.service";
+import { DatabaseService } from './services/database.service';
 
 function main(){
-    const database = new DatabaseService('myuri');
-    if(database.connect())
-        console.log('Connected!');
+    const db = new DatabaseService('random-uri');
+    console.log(db.uri);
 }
 
 main();
