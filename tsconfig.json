@@ -13,7 +13,7 @@
     "module": "nodenext", // build (imports and exports)
     "target": "esnext",  // build (what js syntax ts outputs)
     "lib": ["esnext"], // typing (Provides type declarations for latest JS built-ins)
-    "types": ["node"], // typing (Provides type declarations for latest JS built-ins)    
+    "types": ["node", "jest"], // typing (Provides type declarations for latest JS built-ins)    
 
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
